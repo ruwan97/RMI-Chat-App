@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 24, 2020 3:32:07 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.User" table="user" catalog="chatapp" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="user_name" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="20" not-null="false" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="500" not-null="true" />
+        </property>
+        <property name="image" type="binary">
+            <column name="image" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 24, 2020 3:32:07 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Subscrbers" table="subscrbers" catalog="chatapp" optimistic-lock="version">
+        <id name="subId" type="int">
+            <column name="subId" />
+            <generator class="increment" />
+        </id>
+        <property name="chatId" type="int">
+            <column name="chatId" not-null="true" />
+        </property>
+        <property name="userId" type="int">
+            <column name="userId" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
