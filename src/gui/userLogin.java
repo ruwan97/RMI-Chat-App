@@ -202,7 +202,7 @@ public class userLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_showpsdActionPerformed
 
     private void loginPsdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginPsdActionPerformed
-        // TODO add your handling code here:
+         
     }//GEN-LAST:event_loginPsdActionPerformed
 
     /**
