@@ -28,7 +28,7 @@ public class MyServer extends JFrame{
             Registry reg = LocateRegistry.createRegistry(2123);
             reg.bind("ChatAdmin", chat);
             
-//            System.out.println("Chat server is running...");
+            System.out.println("Chat server is running...");
                  
         } catch (RemoteException | AlreadyBoundException e) {
             System.out.println("Exception ocured : " + e.getMessage());
